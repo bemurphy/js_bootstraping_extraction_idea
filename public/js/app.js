@@ -16,7 +16,7 @@ Object.freeze(App.bootstrapping);
 
 App.runBootstrapping = function(el) {
   var $el = $(el),
-      id = $(el).attr('id'),
+      id = $el.attr('id'),
       fun = App.bootstrapping[id],
       jsonText, data;
 
