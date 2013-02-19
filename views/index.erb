@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <%# These ids could be conventional, like comments_show or posts_index %>
     <%= js_init_data_tag('foo_init', {foo: 'bar', fizz: 'buzz'}.to_json) %>
     <%= js_init_data_tag('other_init', {something: "else"}.to_json) %>
   </head>
