@@ -22,6 +22,9 @@ App.runBootstrapping = function(el) {
 
   if (typeof(fun) === 'function') {
     jsonText = $el.html();
+    // This is one key rule, that all data we work
+    // with run through JSON.parse.  See OWASP for more
+    // details: http://bit.ly/VC6N4d
     data = JSON.parse(jsonText);
     fun(data);
   }
